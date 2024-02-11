@@ -2,26 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primaryColor: #1c875a;
+  --secondaryColor: #177252;
+  --whiteColor: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+
+
+/* add the code bellow */
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .pbg {
+    background: var(--primaryColor);
+  }
+
+  .sbg {
+    background: var(--secondaryColor);
+  }
+
+  .pCl {
+    color: var(--primaryColor);
+  }
+
+  .sCl {
+    color: var(--secondaryColor);
+  }
+
+  .wbg {
+    background: var(--whiteColor);
+  }
+
+  .wCl {
+    color: var(--whiteColor);
+  }
+
+  .headerShadox {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .heroTextShadow {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.402);
+  }
+
+  .homeNewShadow {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .16);
   }
 }
 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+.containerWrper {
+  width: 80%;
+  margin: auto;
+
+}
+
+abbr {
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* for home gellary componnent */
+.homegellary {
+  background: linear-gradient(#09281b3a, #09281b3a), url('../public/homeGellarybanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.footerImageBg {
+  background: linear-gradient(transparent, #10ff9b77);
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@media (min-width:1270px) {
+  .containerWrper {
+    width: 1170px;
+  }
 }
