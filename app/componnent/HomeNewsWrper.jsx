@@ -7,7 +7,7 @@ export default function HomeNewsWrper() {
             <Container>
                 <div>
                     <HomeNews />
-                    <div className="wCl">
+                    <div className="pt-14 md:pt-0 text-center wCl">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aut unde dolorem laudantium eaque optio quibusdam deleniti beatae ut. Consectetur.
                     </div>
                 </div>

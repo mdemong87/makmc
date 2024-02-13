@@ -8,8 +8,8 @@ const HomeAbout = () => {
     return (
         <div className="py-16 md:py-28">
             <Container>
-                <div className="flex flex-col gap-3 md:gap-0 md:flex-row">
-                    <div className="w-full h-[480px] flex gap-4">
+                <div className="h-fit flex flex-col gap-12 md:gap-0 md:flex-row">
+                    <div className="w-full h-fit flex gap-4">
                         <div className="hidden xl:block py-7 px-3 pbg w-fit h-fit rounded-tl-xl rounded-tr-xl rounded-bl-full rounded-br-full border border-green-300">
                             <FaTree className="wCl text-5xl" />
                         </div>

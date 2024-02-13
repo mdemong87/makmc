@@ -1,19 +1,15 @@
-export default function AboutPage(){
-    return(
+import HomeAbout from "@/app/componnent/HomeAbout";
+import HomeRecentlyHosted from "@/app/componnent/HomeRecentlyHosted";
 
-<main className="h-fit pb-10">
+export default function AboutPage() {
+  return (
+
+    <main className="h-fit pb-10">
       {/* pt-16 md:pt-28 */}
-      <div className='pt-16 md:pt-28'> 
-            this is a about page..........
-
-
-            
-      <div className='h-[1000px]'>
-        fasdfsadf
-      </div>
-
-        
+      <div className='pt-16 md:pt-28'>
+        <HomeAbout />
+        <HomeRecentlyHosted />
       </div>
     </main>
-    )
+  )
 }

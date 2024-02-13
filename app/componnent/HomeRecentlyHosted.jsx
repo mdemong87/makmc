@@ -8,11 +8,11 @@ const HomeRecentlyHosted = () => {
     return (
         <div className="py-16 md:py-28">
             <Container>
-                <div className="flex flex-col gap-8 md:gap-10 md:flex-row">
+                <div className="h-fit flex flex-col gap-12 md:gap-10 md:flex-row">
                     <div className="w-full h-fit">
                         <Image src={homerecentlyhosted} alt="Home-about-image" />
                     </div>
-                    <div className="w-full h-[480px] flex gap-4">
+                    <div className="w-full h-fit flex gap-4">
                         <div className="hidden xl:block py-7 px-3 pbg w-fit h-fit rounded-tl-xl rounded-tr-xl rounded-bl-full rounded-br-full border border-green-300">
                             <FaStarOfDavid className="wCl text-5xl" />
                         </div>

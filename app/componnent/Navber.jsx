@@ -30,9 +30,9 @@ export default function Navber() {
 
 
                     {/* for home nav item */}
-                    <li onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0  text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
-                        <Link href={'/'}>Home</Link>
-                    </li>
+                    <Link href={"/"} onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0  text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
+                        Home
+                    </Link>
 
 
                     {/* for about nav item */}
@@ -88,16 +88,16 @@ export default function Navber() {
 
 
                     {/* for payment nav item */}
-                    <li onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0 text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
-                        <Link href={'/payment'}>Payment</Link>
-                    </li>
+                    <Link href={"/payment"} onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0 text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
+                        Payment
+                    </Link>
 
 
 
                     {/* for contact us nav item */}
-                    <li onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0 text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
-                        <Link href={'/'}>Contact us</Link>
-                    </li>
+                    <Link href={"/"} onClick={() => { setisshow(false); setshowAboutDrop(false); setshowRegistrationDrop(false) }} className="p-3 px-6 md:px-0 md:p-0 text-lg font-bold w-[95%] md:w-fit ml-6 md:ml-0 rounded-xl cursor-pointer transition delay-150ms hover:sbg md:hover:wbg">
+                        Contact us
+                    </Link>
                 </ul>
 
 
