@@ -16,7 +16,7 @@ export default function Navber() {
 
     return (
         <div>
-            <nav className="pt-0 h-full md:pt-10 text-gray-50 md:pCl">
+            <nav className="pt-0 h-full w-full md:pt-10 text-gray-50 md:pCl">
 
                 <ul className={`h-screen md:h-full w-full md:flex gap-5 md:gap-6 items-start md:items-center ${styles.navberWrper} ${isshow ? "flex flex-col pbg md:flex-row" : "hidden"}`}>
 
