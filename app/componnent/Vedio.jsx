@@ -5,8 +5,6 @@ export default function Vedio() {
                 <source src='https://res.cloudinary.com/dmo0gctub/video/upload/v1707814856/hero_y4mh2o.mp4' type="video/mp4" />
 
             </video>
-
-
         </div>
     )
 }
